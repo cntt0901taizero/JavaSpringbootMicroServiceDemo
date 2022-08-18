@@ -22,6 +22,7 @@
         <module>discovery-server</module>
         <module>api-gateway</module>
         <module>camunda-server</module>
+        <module>camunda-api-server</module>
     </modules>
 
     <properties>

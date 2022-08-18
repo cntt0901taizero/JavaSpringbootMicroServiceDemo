@@ -4,6 +4,7 @@ import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 
 import javax.inject.Named;
+import javax.ws.rs.ApplicationPath;
 import java.util.Objects;
 
 @Named
