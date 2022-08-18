@@ -1,0 +1,7 @@
+{
+  "timestamp": "2022-08-18T07:16:12.071+00:00",
+  "path": "/api/inventory/testInventory",
+  "status": 503,
+  "error": "Service Unavailable",
+  "requestId": "81c7e167-30"
+}

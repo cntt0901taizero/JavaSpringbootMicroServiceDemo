@@ -1,0 +1,6 @@
+GET http://localhost:8080/api/inventory/testInventory
+
+<> 2022-08-18T141612.503.json
+
+###
+
