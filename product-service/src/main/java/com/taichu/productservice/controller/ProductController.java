@@ -36,7 +36,7 @@ public class ProductController {
         );
     }
 
-    @PutMapping("/updateProduct")
+    @PutMapping("/updateProduct/{id}")
     public ResponseEntity<ResponseObject> updateProduct(@RequestBody ProductRequest productRequest, @PathVariable Long id) {
         Optional<Product> product = productRepository.findById(id);
         Product dataSave = new Product();
@@ -56,7 +56,7 @@ public class ProductController {
         );
     }
 
-    @DeleteMapping("/deleteProduct")
+    @DeleteMapping("/deleteProduct/{id}")
     public ResponseEntity<ResponseObject> deleteProduct(@PathVariable Long id) {
         productRepository.deleteById(id);
         return ResponseEntity.status(HttpStatus.OK).body(
