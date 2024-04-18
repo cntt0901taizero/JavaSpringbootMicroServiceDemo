@@ -19,13 +19,13 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="api-gateway" options="-parameters" />
-      <module name="camunda-api-server" options="-parameters" />
-      <module name="camunda-server" options="-parameters" />
-      <module name="discovery-server" options="-parameters" />
-      <module name="inventory-service" options="-parameters" />
-      <module name="order-service" options="-parameters" />
-      <module name="product-service" options="-parameters" />
+      <module name="api-gateway" options="" />
+      <module name="camunda-api-server" options="" />
+      <module name="camunda-server" options="" />
+      <module name="discovery-server" options="" />
+      <module name="inventory-service" options="" />
+      <module name="order-service" options="" />
+      <module name="product-service" options="" />
     </option>
   </component>
 </project>

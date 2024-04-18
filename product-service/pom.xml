@@ -57,6 +57,35 @@
             <artifactId>jakarta.persistence-api</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-maven-plugin</artifactId>
+            <version>4.26.0</version>
+        </dependency>
+
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <configuration>
+                    <propertyFileWillOverride>true</propertyFileWillOverride>
+                    <propertyFile>target/classes/liquibase.properties</propertyFile>
+                    <url></url>
+                    <username></username>
+                    <password></password>
+                    <outputChangeLogFile></outputChangeLogFile>
+                    <changeLogFile></changeLogFile>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
