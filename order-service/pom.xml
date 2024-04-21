@@ -51,7 +51,7 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
-        <dependency>
+        <!-- <dependency>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-core</artifactId>
         </dependency>
@@ -59,7 +59,7 @@
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-maven-plugin</artifactId>
             <version>4.26.0</version>
-        </dependency>
+        </dependency> -->
     </dependencies>
 
 </project>

@@ -1,0 +1,7 @@
+com\taichu\inventoryservice\dto\InventoryResponse$InventoryResponseBuilder.class
+com\taichu\inventoryservice\dto\InventoryResponse.class
+com\taichu\inventoryservice\service\InventoryService.class
+com\taichu\inventoryservice\repository\InventoryRepository.class
+com\taichu\inventoryservice\controller\InventoryController.class
+com\taichu\inventoryservice\InventoryServiceApplication.class
+com\taichu\inventoryservice\model\Inventory.class

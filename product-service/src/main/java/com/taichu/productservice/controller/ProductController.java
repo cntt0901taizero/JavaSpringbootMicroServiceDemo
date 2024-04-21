@@ -45,7 +45,7 @@ public class ProductController {
         dataSave.setPrice(productRequest.getPrice());
         dataSave.setDescription(productRequest.getDescription());
 
-        if (product == null) {
+        if (!product.isPresent()) {
             return ResponseEntity.status(HttpStatus.NOT_IMPLEMENTED).body(
                     new ResponseObject("false", "Can not find Product", "")
             );

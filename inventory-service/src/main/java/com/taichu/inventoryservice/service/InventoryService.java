@@ -1,7 +1,6 @@
 package com.taichu.inventoryservice.service;
 
 import com.taichu.inventoryservice.dto.InventoryResponse;
-import com.taichu.inventoryservice.model.Inventory;
 import com.taichu.inventoryservice.repository.InventoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
