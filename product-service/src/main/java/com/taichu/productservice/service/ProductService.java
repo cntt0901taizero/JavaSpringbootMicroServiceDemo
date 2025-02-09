@@ -34,11 +34,7 @@ public class ProductService {
 
     public List<ProductResponse> getAllProducts() {
         List<Product> products = productRepository.findAll();
-        if (products != null) {
-            return products.stream().map(this::mapToProductResponse).toList();
-        } else {
-            return null;
-        }
+        return products.stream().map(this::mapToProductResponse).toList();
     }
 
     private ProductResponse mapToProductResponse(Product product) {
