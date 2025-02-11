@@ -14,6 +14,7 @@ import javax.transaction.Transactional;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -23,18 +24,18 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final WebClient.Builder webClientBuilder;
 
-    public void placeOrder(OrderRequest orderRequest) {
+    public String placeOrder(OrderRequest orderRequest) {
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
         List<OrderLineItems> orderLineItemsList = orderRequest.getOrderLineItemsDtoList()
                 .stream()
                 .map(this::mapToOrderLineItems)
-                .toList();
+                .collect(Collectors.toList());
 
         order.setOrderLineItemsList(orderLineItemsList);
 
         List<String> skuCodeList = order.getOrderLineItemsList().stream()
-                .map(OrderLineItems::getSkuCode).toList();
+                .map(OrderLineItems::getSkuCode).collect(Collectors.toList());
 
         InventoryResponse[] inventoryResponsesArray = webClientBuilder.build().get()
                 .uri("http://inventory-service/api/inventory", uriBuilder ->
@@ -48,6 +49,7 @@ public class OrderService {
 
         if (isAllMatch) {
             orderRepository.save(order);
+            return "Order Placed Successfully";
         } else {
             throw new IllegalArgumentException("Product is not in stock, please try again later");
         }
