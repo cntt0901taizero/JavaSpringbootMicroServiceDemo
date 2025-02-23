@@ -1,10 +1,10 @@
 package com.taichu.productservice.repository;
 
 import com.taichu.productservice.model.Product;
-import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface ProductRepository extends MongoRepository<Product, Long> {
+public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByName (String productName);
 }

@@ -1,19 +1,21 @@
 package com.taichu.productservice.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.Setter;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+// import org.springframework.data.annotation.Id;
+
+import javax.persistence.*;
 import java.math.BigDecimal;
 
-// MongoDB set Dependency setup
-@Document(value = "product")
+@Entity
+@Table(name = "t_product")
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
