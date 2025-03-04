@@ -66,6 +66,21 @@
             <artifactId>spring-cloud-sleuth-zipkin</artifactId>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.mongodb</groupId>-->
+<!--            <artifactId>mongo-java-driver</artifactId>-->
+<!--            <version>3.12.14</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.mongodb</groupId>-->
+<!--            <artifactId>mongodb-driver-sync</artifactId>-->
+<!--            <version>5.0.1</version>-->
+<!--        </dependency>-->
+
     </dependencies>
 
 <!--    <build>-->
@@ -85,5 +100,7 @@
 <!--            </plugin>-->
 <!--        </plugins>-->
 <!--    </build>-->
+
+
 
 </project>
