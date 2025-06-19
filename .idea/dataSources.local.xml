@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-233.14475.28">
+    <data-source name="camunda-server/Hibernate" uuid="740e26ce-5bb8-44a0-b5de-bafc7a6d445f">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="H2" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

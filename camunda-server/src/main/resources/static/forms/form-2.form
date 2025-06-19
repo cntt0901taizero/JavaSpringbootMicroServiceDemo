@@ -1,0 +1,36 @@
+{
+  "components": [
+    {
+      "label": "LoiChao",
+      "type": "textfield",
+      "id": "Field_0zsnukp",
+      "key": "LoiChao",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "QuocTich",
+      "type": "textfield",
+      "id": "Field_009niwk",
+      "key": "QuocTich",
+      "defaultValue": "american"
+    },
+    {
+      "label": "goodLuck",
+      "type": "textfield",
+      "id": "Field_1e9a0c8",
+      "key": "goodLuck",
+      "defaultValue": "Chúc quý khách may mắn"
+    }
+  ],
+  "type": "default",
+  "id": "Form_0i35s6m",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.1.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

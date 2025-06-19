@@ -1,0 +1,8 @@
+# Target directories
+**/target/*
+target/
+*.jar
+*.jar.*
+*.war
+*.war.*
+*.log
